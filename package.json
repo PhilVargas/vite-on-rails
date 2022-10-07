@@ -2,5 +2,10 @@
   "devDependencies": {
     "vite": "^3.1.6",
     "vite-plugin-ruby": "^3.1.2"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^2.1.0",
+    "vite-plugin-full-reload": "^1.0.4",
+    "vite-tsconfig-paths": "^3.5.1"
   }
 }
