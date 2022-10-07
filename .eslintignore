@@ -1,0 +1,6 @@
+.eslintrc.cjs
+.eslintrc.rules.cjs
+*.config.ts
+*.d.ts
+
+**/jest.setup.ts
