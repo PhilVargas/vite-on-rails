@@ -1,6 +1,6 @@
 {
   "all": {
-    "watchAdditionalPaths": []
+    "watchAdditionalPaths": ["app/frontend/images/*"]
   },
   "development": {
     "autoBuild": true,

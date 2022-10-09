@@ -1,5 +1,13 @@
 class Api::V1::EngagementsController < ApplicationController
 
+  skip_before_action :verify_authenticity_token
+
+  def index
+    engagements = Engagement.all
+
+    render json: engagements
+  end
+
   def show
     engagement = Engagement.find(params[:id])
 
@@ -10,7 +18,7 @@ class Api::V1::EngagementsController < ApplicationController
     engagement = Engagement.find(params[:id])
 
     if engagement.update(engagement_params)
-      render status: :not_content
+      head :no_content
     else
       render json: { error: 'Unable to update Engagement' }, status: 400
     end

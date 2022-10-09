@@ -1,11 +1,15 @@
 import React from 'react';
 
-import Engagement from 'components/Engagement';
+import { BrowserRouter } from 'react-router-dom';
+
+import AppRouter from './AppRouter';
 
 const App = () => {
   return (
     <React.StrictMode>
-      <Engagement />
+      <BrowserRouter>
+        <AppRouter />
+      </BrowserRouter>
     </React.StrictMode>
   );
 };

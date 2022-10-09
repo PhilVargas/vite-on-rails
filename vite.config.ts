@@ -16,6 +16,9 @@ export default defineConfig({
     alias: {
       components: resolve(__dirname, 'app/frontend/components'),
       pages: resolve(__dirname, 'app/frontend/pages'),
+      layouts: resolve(__dirname, 'app/frontend/layouts'),
+      images: resolve(__dirname, 'app/frontend/images'),
+      types: resolve(__dirname, 'app/frontend/types'),
     },
   },
 });

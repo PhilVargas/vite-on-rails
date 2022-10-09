@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": "./app/frontend",
+    "baseUrl": "app/frontend",
     "target": "ESNext",
     "useDefineForClassFields": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
