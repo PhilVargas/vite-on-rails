@@ -31,8 +31,6 @@ const EngagementForm = ({
     status: engagement.status,
   });
 
-  console.log(formData);
-
   const handleAuctionStatusChange = () => {
     setIsDisabled(true);
     const response = fetch(`/api/v1/engagements/${id}`, {

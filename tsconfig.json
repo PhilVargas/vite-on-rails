@@ -20,7 +20,7 @@
     "noImplicitThis": true,
     "strictNullChecks": true,
   },
-  "include": ["app/frontend", "jest.setup.ts", "vite.config.ts"],
+  "include": ["app/frontend", "jest.setup.ts", "vite.config.ts", "jest.config.ts"],
 
   // "references": [{ "path": "./tsconfig.node.json" }]
 }
