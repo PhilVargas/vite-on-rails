@@ -3,11 +3,12 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.1.0"
 
-gem "rails", "~> 7.0.4"
+gem "rails", "~> 7"
 gem "sprockets-rails"
 gem "pg", "~> 1.1"
 gem "puma", "~> 5.0"
 gem "vite_rails"
+gem "active_model_serializers"
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 # gem "importmap-rails"
@@ -43,6 +44,7 @@ group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
   gem "rspec-rails"
+  gem "factory_bot_rails"
 end
 
 group :development do
@@ -53,6 +55,5 @@ end
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "webdrivers"
-  gem "factory_bot_rails"
   gem "shoulda-matchers"
 end
