@@ -12,6 +12,9 @@ export default defineConfig({
     FullReload(['config/routes.rb', 'app/views/**/*'], { delay: 200 }),
     // tsconfigPaths(),
   ],
+  // In order to import from our frontend files using relative imports,
+  // we need to alias any top level folders
+  // https://vite-ruby.netlify.app/config/index.html#watchadditionalpaths
   resolve: {
     alias: {
       components: resolve(__dirname, 'app/frontend/components'),
